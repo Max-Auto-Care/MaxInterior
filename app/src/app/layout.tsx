@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Max Interior Cleaner",
   description: "Perawatan Interior Lebih Praktis",
+  icons: "/icon.png"
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
