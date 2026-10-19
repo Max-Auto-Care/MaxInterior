@@ -146,11 +146,17 @@ export default function Home() {
               Auto Care. Praktis untuk perawatan kendaraan sehari-hari.
             </p>
 
+            <div className="mt-5 flex flex-wrap gap-2 text-sm font-semibold">
+              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/10 px-3 py-2 text-green-400">
+                ✓ Bisa Bayar COD
+              </span>
+            </div>
+
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <OrderButton className="sm:flex-1">ORDER SEKARANG</OrderButton>
 
               <OrderButton platform="shopee" className="sm:flex-1">
-                CHECKOUT SHOPEE
+                CHECKOUT DI SHOPEE
               </OrderButton>
             </div>
 
@@ -244,10 +250,10 @@ export default function Home() {
                   {benefit.number}
                 </span>
                 <img
-                    src={benefit.image}
-                    loading="lazy"
-                    className="aspect-[4/3] w-full rounded-xl object-contain transition duration-300 group-hover:scale-[1.03]"
-                  />
+                  src={benefit.image}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full rounded-xl object-contain transition duration-300 group-hover:scale-[1.03]"
+                />
                 <h3 className="mt-5 text-xl font-bold">{benefit.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-zinc-400">
                   {benefit.description}
@@ -312,10 +318,17 @@ export default function Home() {
 
             <div className="rounded-2xl border border-white/10 bg-black/40 p-6 sm:p-8">
               <p className="text-sm text-center text-zinc-400">MAX AUTO CARE</p>
-              <h3 className="mt-2 text-2xl text-center font-black">Interior Cleaner</h3>
-              <p className="text-sm text-zinc-400 text-center line-through">Rp49.000</p>
+              <h3 className="mt-2 text-2xl text-center font-black">
+                Interior Cleaner
+              </h3>
+              <p className="text-sm text-zinc-400 text-center line-through">
+                Rp49.000
+              </p>
 
-              <p className="mt-2 text-4xl font-black text-center sm:text-5xl" style={{color:"#fefae0"}}>
+              <p
+                className="mt-2 text-4xl font-black text-center sm:text-5xl"
+                style={{ color: "#fefae0" }}
+              >
                 Rp30.000
               </p>
               <p className="mt-3 text-sm leading-6 text-zinc-400">
@@ -324,7 +337,7 @@ export default function Home() {
 
               <div className="mt-6 flex flex-col gap-3">
                 <OrderButton>ORDER SEKARANG</OrderButton>
-                <OrderButton platform="shopee">CHECKOUT SHOPEE</OrderButton>
+                <OrderButton platform="shopee">CHECKOUT DI SHOPEE</OrderButton>
               </div>
 
               <p className="mt-4 text-center text-xs leading-5 text-zinc-500">
